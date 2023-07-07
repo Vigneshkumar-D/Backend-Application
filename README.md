@@ -4,25 +4,22 @@ Spring Boot Application with User Authentication and Authorization
 This is a sample Spring Boot application that demonstrates user creation, authentication, and authorization using JSON Web Tokens (JWT).
 
 ## Features
-User Creation: Users can create an account by providing their email and password. The password is securely hashed and stored in the database.
-User Authentication: Users can authenticate by providing their email and password. Upon successful authentication, a JWT token is generated and returned.
-Authorization with JWT: Protected routes can be accessed by providing the JWT token in the request headers. The token is verified to ensure the user has the necessary permissions.
+* User Creation: Users can create an account by providing their email and password. The password is securely hashed and stored in the database.
+* User Authentication: Users can authenticate by providing their email and password. Upon successful authentication, a JWT token is generated and returned.
+* Authorization with JWT: Protected routes can be accessed by providing the JWT token in the request headers. The token is verified to ensure the user has the necessary permissions.
 
 ## Prerequisites
 Before running the application, ensure the following prerequisites are met:
 * JDK 8 or higher
 * Maven
-* MySQL database (or any other supported database)
+* H2Database
 
 ## Getting Started
 ### Clone the repository:
 bash
 Copy code
 git clone https://github.com/Vigneshkumar-D/Backend-Application.git
-Configure the Database:
 
-### Create a new MySQL database.
-Update the database configuration in application.properties with your database credentials and connection details.
 ### Build the Application:
 bash
 - Copy code
