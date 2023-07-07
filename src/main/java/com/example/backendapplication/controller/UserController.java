@@ -11,15 +11,15 @@ import java.util.*;
 public class UserController{
     @Autowired
     public UserH2Service userH2Service;
-    @PostMapping("/login")
+    @PostMapping("/api/users/login")
     public String userLogin(@RequestBody User userDetails){
         return userH2Service.userLogin(userDetails);
     }
-    @PostMapping("/signup")
+    @PostMapping("/api/users/signup")
     public User userSignup(@RequestBody User userDetails){
         return userH2Service.userSignup(userDetails);
     }
-    @GetMapping("/home")
+    @GetMapping("/api/users/")
     public String userHome(@RequestHeader("jwsToken") String jwsToken)
     {
         return userH2Service.userHome(jwsToken);
