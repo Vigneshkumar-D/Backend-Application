@@ -1,4 +1,4 @@
-Spring Boot Application with User Authentication and Authorization
+*Spring Boot Application with User Authentication and Authorization*
 This is a sample Spring Boot application that demonstrates user creation, authentication, and authorization using JSON Web Tokens (JWT).
 
 Features
