@@ -20,8 +20,8 @@ public class UserController{
         return userH2Service.userSignup(userDetails);
     }
     @GetMapping("/api/users/")
-    public String userHome(@RequestHeader("jwsToken") String jwsToken)
+    public String userHome(@RequestHeader("jwtToken") String jwtToken)
     {
-        return userH2Service.userHome(jwsToken);
+        return userH2Service.userHome(jwtToken);
     }
 }
